@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Barlow", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-navy-950: #041223;
+  --color-navy-900: #071D36;
+  --color-navy-800: #0C2A4D;
+  --color-navy-700: #133A66;
+  --color-industrial-yellow: #F5B51B;
+  --color-industrial-yellow-hover: #E0A20F;
+  --color-surface-light: #F4F6F9;
+  --color-charcoal-950: #0E141B;
+  --color-charcoal-900: #141C25;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+    color: #071D36;
+    background-color: #ffffff;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    text-wrap: balance;
+  }
+
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Subtle engineering blueprint grid for dark technology canvases */
+.bg-engineering-grid {
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+/* Signature diagonal brochure stripe accent */
+.tm-diagonal-accent {
+  background: repeating-linear-gradient(
+    -58deg,
+    #F5B51B 0px,
+    #F5B51B 14px,
+    transparent 14px,
+    transparent 24px
+  );
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

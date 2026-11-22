@@ -1,0 +1,6 @@
+{
+  "name": "TM Industrial Solution",
+  "description": "Advanced Condition Monitoring, Vibration Analysis, Laser Shaft Alignment, Oil Analysis, Dynamic Balancing, Thermography & Industrial Reliability Services in India.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
